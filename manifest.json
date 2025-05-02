@@ -1,0 +1,49 @@
+{
+  "manifest_version": 3,
+  "name": "JEE & NEET Countdown",
+  "version": "1.0",
+  "description": "A countdown extension for JEE and NEET exams with user preferences.",
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  "background": {
+    "service_worker": "src/background.js"
+  },
+  "action": {
+    "default_popup": "src/popup/popup.html",
+    "default_icon": {
+      "16": "assets/icons/icon-16.png",
+      "48": "assets/icons/icon-48.png",
+      "128": "assets/icons/icon-128.png"
+    }
+  },
+  "chrome_url_overrides": {
+    "newtab": "src/newtab/newtab.html"
+  },
+  "options_page": "src/options/options.html",
+  "icons": {
+    "16": "assets/icons/icon-16.png",
+    "48": "assets/icons/icon-48.png",
+    "128": "assets/icons/icon-128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "src/common/countdown-data.js",
+        "src/countdown/countdown.html",
+        "src/countdown/countdown.js",
+        "src/newtab/newtab.html",
+        "src/newtab/newtab.js",
+        "src/newtab/newtab.css",
+        "src/popup/popup.js"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+}
