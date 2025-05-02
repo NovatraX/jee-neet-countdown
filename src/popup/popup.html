@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" href="popup.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+        <title>JEE & NEET Countdown</title>
+    </head>
+    <body>
+        <div id="countdown-container">
+            <div class="header">
+                <h1>Countdown Timer</h1>
+                <a id="settings-link" href="#" title="Settings">
+                    <i class="fas fa-cog"></i>
+                </a>
+            </div>
+            <div id="jee-countdown" class="countdown">
+                <h2>JEE Countdown</h2>
+                <p id="jee-timer">Loading...</p>
+            </div>
+            <div id="jee-adv-countdown" class="countdown">
+                <h2>JEE Advanced Countdown</h2>
+                <p id="jee-adv-timer">Loading...</p>
+            </div>
+            <div id="neet-countdown" class="countdown">
+                <h2>NEET Countdown</h2>
+                <p id="neet-timer">Loading...</p>
+            </div>
+            <button id="open-countdown" class="button">Open Full Countdown</button>
+        </div>
+        <script type="module" src="popup.js"></script>
+    </body>
+</html>
