@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" href="../countdown/countdown.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+        <title>JEE & NEET Countdown</title>
+    </head>
+    <body>
+        <div id="countdown-container">
+            <div class="header">
+                <h1>Countdown to Exams</h1>
+                <a id="options-link" href="#" title="Options">
+                    <i class="fas fa-cog"></i>
+                </a>
+            </div>
+
+            <div id="jee-countdown" class="countdown">
+                <h2>JEE Main Countdown</h2>
+                <div id="jee-timer" class="timer"></div>
+            </div>
+
+            <div id="neet-countdown" class="countdown">
+                <h2>NEET Countdown</h2>
+                <div id="neet-timer" class="timer"></div>
+            </div>
+
+            <div id="jee-adv-countdown" class="countdown">
+                <h2>JEE Advanced Countdown</h2>
+                <div id="jee-adv-timer" class="timer"></div>
+            </div>
+        </div>
+        <script type="module" src="../countdown/countdown.js"></script>
+    </body>
+</html>

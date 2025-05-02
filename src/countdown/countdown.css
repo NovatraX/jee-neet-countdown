@@ -1,0 +1,80 @@
+body {
+    font-family: "JetBrains Mono", monospace;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 28px;
+    margin: 0;
+    color: #2c3e50;
+}
+
+#options-link {
+    color: #333;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#options-link:hover {
+    color: #007bff;
+}
+
+.countdown {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    margin-bottom: 30px;
+    transition: transform 0.3s;
+}
+
+.countdown:hover {
+    transform: translateY(-5px);
+}
+
+.countdown h2 {
+    font-size: 22px;
+    margin: 0 0 15px;
+    color: #2c3e50;
+    border-bottom: 2px solid #f1f1f1;
+    padding-bottom: 10px;
+}
+
+.timer {
+    font-size: 36px;
+    font-weight: bold;
+    color: #e74c3c;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.preferences {
+    margin-top: 30px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.preference-label {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+.preference-checkbox {
+    margin-right: 10px;
+}
