@@ -19,7 +19,7 @@ This extension provides countdown timers for the JEE and NEET exams, allowing us
 
 2. Navigate to the extension directory:
    ```
-   cd jee-neet-countdown-extension
+   cd jee-neet-countdown
    ```
 
 3. Load the extension in your browser:
