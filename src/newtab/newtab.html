@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" href="../newtab/newtab.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+        <title>JEE & NEET Dashboard</title>
+    </head>
+    <body>
+        <div id="dashboard-container">
+            <div class="header">
+                <h1>JEE & NEET Dashboard</h1>
+                <a id="options-link" href="#" title="Options">
+                    <i class="fas fa-cog"></i>
+                </a>
+            </div>
+
+            <div class="content-row">
+                <div id="date-time-container" class="content-block">
+                    <h2>Current Date & Time</h2>
+                    <div id="current-date" class="info-block"></div>
+                    <div id="current-time" class="info-block"></div>
+                </div>
+
+                <div id="quote-container" class="content-block">
+                    <h2>Today's Motivation</h2>
+                    <div id="quote-text"></div>
+                    <div id="quote-author"></div>
+                </div>
+            </div>
+
+            <div id="countdown-section">
+                <h2>Exam Countdowns</h2>
+                <div class="countdowns-row">
+                    <div id="jee-countdown" class="countdown-block">
+                        <h3>JEE Main</h3>
+                        <div id="jee-timer" class="timer"></div>
+                    </div>
+
+                    <div id="neet-countdown" class="countdown-block">
+                        <h3>NEET</h3>
+                        <div id="neet-timer" class="timer"></div>
+                    </div>
+
+                    <div id="jee-adv-countdown" class="countdown-block">
+                        <h3>JEE Advanced</h3>
+                        <div id="jee-adv-timer" class="timer"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="module" src="../newtab/newtab.js"></script>
+    </body>
+</html>

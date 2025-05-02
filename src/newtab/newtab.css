@@ -1,0 +1,150 @@
+body {
+    font-family: "JetBrains Mono", monospace;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 30px;
+    min-height: 100vh;
+}
+
+#dashboard-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 28px;
+    margin: 0;
+    color: #2c3e50;
+}
+
+h2 {
+    font-size: 22px;
+    margin: 0 0 15px;
+    color: #2c3e50;
+}
+
+h3 {
+    font-size: 18px;
+    margin: 0 0 10px;
+    color: #34495e;
+}
+
+#options-link {
+    color: #333;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#options-link:hover {
+    color: #007bff;
+}
+
+.content-row {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.content-block {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    flex: 1;
+    transition: transform 0.3s;
+}
+
+.content-block:hover {
+    transform: translateY(-5px);
+}
+
+.info-block {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+#current-time {
+    font-size: 42px;
+}
+
+#quote-text {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+#quote-author {
+    font-size: 16px;
+    text-align: right;
+    color: #7f8c8d;
+}
+
+#countdown-section {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    transition: transform 0.3s;
+}
+
+#countdown-section:hover {
+    transform: translateY(-5px);
+}
+
+.countdowns-row {
+    display: flex;
+    gap: 20px;
+}
+
+.countdown-block {
+    flex: 1;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 6px;
+}
+
+.timer {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.time-block {
+    font-size: 18px;
+    text-align: center;
+    background-color: #e9ecef;
+    padding: 10px;
+    border-radius: 4px;
+    min-width: 60px;
+}
+
+.time-block span {
+    display: block;
+    font-size: 12px;
+    margin-top: 5px;
+    color: #6c757d;
+}
+
+@media (max-width: 768px) {
+    .content-row,
+    .countdowns-row {
+        flex-direction: column;
+    }
+
+    .content-block,
+    .countdown-block {
+        margin-bottom: 20px;
+    }
+}
