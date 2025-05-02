@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>JEE NEET Countdown Options</title>
+        <link rel="stylesheet" href="options.css" />
+    </head>
+    <body>
+        <h1>Countdown Preferences</h1>
+        <div class="dates-container">
+            <div class="date-info">
+                <h3>JEE Main Exam: <span id="jee-date">Loading...</span></h3>
+            </div>
+            <div class="date-info">
+                <h3>NEET Exam: <span id="neet-date">Loading...</span></h3>
+            </div>
+            <div class="date-info">
+                <h3>JEE Advanced Exam: <span id="jeeadv-date">Loading...</span></h3>
+            </div>
+        </div>
+        <form id="preferences-form">
+            <label>
+                <input type="checkbox" id="show-jee" checked />
+                Show JEE Countdown
+            </label>
+            <br />
+            <label>
+                <input type="checkbox" id="show-neet" checked />
+                Show NEET Countdown
+            </label>
+            <br />
+            <label>
+                <input type="checkbox" id="show-jee-adv" checked />
+                Show JEE Advanced Countdown
+            </label>
+            <br />
+            <button type="submit">Save Preferences</button>
+        </form>
+        <script type="module" src="options.js"></script>
+    </body>
+</html>
