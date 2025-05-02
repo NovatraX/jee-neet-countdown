@@ -14,7 +14,7 @@ This extension provides countdown timers for the JEE and NEET exams, allowing us
 
 1. Clone the repository:
    ```
-   git clone https://github.com/novatra/jee-neet-countdown.git
+   git clone https://github.com/novatrax/jee-neet-countdown.git
    ```
 
 2. Navigate to the extension directory:
